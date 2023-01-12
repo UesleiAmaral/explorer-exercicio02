@@ -1,7 +1,5 @@
-import { Alunos } from "./module/Alunos.js ";
+import { CriaAluno, alunos } from './module/Alunos.js ';
 
-const { aluno01, aluno02 } = Alunos;
+CriaAluno();
 
-console.log(aluno01 )
-
-
+console.log(alunos);
