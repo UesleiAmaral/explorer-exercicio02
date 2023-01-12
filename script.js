@@ -1,5 +1,5 @@
-import { CriaAluno, alunos } from './module/Alunos.js ';
+import { Aluno  } from './module/Alunos.js ';
 
-CriaAluno();
+Aluno.criaAluno("joao", 10, 20)
+Aluno.criaAluno("Maria", 20, 30)
 
-console.log(alunos);
