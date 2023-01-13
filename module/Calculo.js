@@ -1,13 +1,11 @@
-export const Media = (primeiraNota, segundaNota) => {
+export const Media = (primeiraNota, segundaNota, nome) => {
   const media = (primeiraNota + segundaNota) / 2;
   const msg = '';
 
-  const aprovado = true;
-
-  if (aprovado) {
-    msg = 'Parabéns você foi aprovado!';
+  if (media >= 6) {
+    msg = `Parabéns ${nome}! você foi aprovado!`;
   } else {
-    msg = 'Que pena! estude mais da próxima!';
+    msg = `Que pena ${nome}! estude mais da próxima!`;
   }
 
   return {

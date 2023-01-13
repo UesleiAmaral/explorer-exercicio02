@@ -1,4 +1,4 @@
-export const CriaAluno = (nome, primeiraNota, segundaNota) => {
+export const CriaAluno = (nome, primeiraNota, segundaNota, media) => {
   const aluno = {
     nome: nome,
     primeiraNota: primeiraNota,
