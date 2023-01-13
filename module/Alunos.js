@@ -1,13 +1,21 @@
-export const Aluno = {
-  nome: '',
-  primeiraNota: 0,
-  segundaNota: 0,
+export const CriaAluno = (nome, primeiraNota, segundaNota) => {
+  const aluno = {
+    nome: nome,
+    primeiraNota: primeiraNota,
+    segundaNota: segundaNota,
+  };
 
-  criaAluno(nome, primeiraNota, segundaNota) {
-    Aluno.nome = nome;
-    Aluno.primeiraNota = primeiraNota;
-    Aluno.segundaNota = segundaNota;
+  return aluno;
+};
 
-    return Aluno;
-  },
+export const DadosAlunos = () => {
+  const nome = prompt('Digite o nome: ');
+  const primeiraNota = prompt('Digite a primeira nota: ');
+  const segundaNota = prompt('Digite a segunda nota: ');
+
+  return {
+    nome,
+    primeiraNota,
+    segundaNota,
+  };
 };

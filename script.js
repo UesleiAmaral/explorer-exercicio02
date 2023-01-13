@@ -1,5 +1,13 @@
-import { Aluno  } from './module/Alunos.js ';
+import { CriaAluno, DadosAlunos } from './module/Alunos.js ';
 
-Aluno.criaAluno("joao", 10, 20)
-Aluno.criaAluno("Maria", 20, 30)
+let alunos = [];
 
+while (confirm('Deseja continuar? ')) {
+  const { nome, primeiraNota, segundaNota } = DadosAlunos();
+
+  const aluno = CriaAluno(nome, primeiraNota, segundaNota);
+
+  alunos.push(aluno);
+}
+
+console.log(alunos);
