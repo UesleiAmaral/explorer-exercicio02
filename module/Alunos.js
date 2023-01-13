@@ -3,6 +3,7 @@ export const CriaAluno = (nome, primeiraNota, segundaNota) => {
     nome: nome,
     primeiraNota: primeiraNota,
     segundaNota: segundaNota,
+    media: media,
   };
 
   return aluno;
