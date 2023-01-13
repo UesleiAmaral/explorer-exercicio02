@@ -1,5 +1,5 @@
 import { CriaAluno, DadosAlunos } from './module/Alunos.js ';
-import { Media } from './module/Calculo.Calculo.js';
+import { Resultado } from './module/Calculo.js';
 
 let alunos = [];
 
@@ -11,11 +11,8 @@ while (confirm('Deseja continuar? ')) {
   alunos.push(aluno);
 }
 
-console.log(alunos);
+Resultado(alunos);
 
-for (let i = 0; i < alunos.length; i++) {
-  const { media, msg } = Media(alunos[i].primeiraNota, alunos[i].segundaNota, alunos[i].nome);
 
-  alert(`${msg}! \n a média foi ${media}`);
-  
-}
+
+
